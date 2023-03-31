@@ -1,0 +1,45 @@
+{
+    "appliance_id": "f82b74c4-0f30-456f-a582-63daca528502",
+    "name": "VyOSImported",
+    "category": "router",
+    "description": "VyOS is a community fork of Vyatta, a Linux-based network operating system that provides software-based network routing, firewall, and VPN functionality. VyOS has a subscription LTS version and a community rolling release.  The latest version in this appliance is the monthly snapshot of the rolling release track.",
+    "vendor_name": "Linux",
+    "vendor_url": "https://vyos.net/",
+    "documentation_url": "https://docs.vyos.io/",
+    "product_name": "VyOS",
+    "product_url": "https://vyos.net/",
+    "registry_version": 3,
+    "status": "stable",
+    "maintainer": "GNS3 Team",
+    "maintainer_email": "developers@gns3.net",
+    "usage": "Default username/password is vyos/vyos.\n\nAt first boot the router will start from the cdrom. Login and then type \"install image\" and follow the instructions.",
+    "symbol": "vyos.svg",
+    "port_name_format": "eth{0}",
+    "qemu": {
+        "adapter_type": "e1000",
+        "adapters": 3,
+        "ram": 512,
+        "hda_disk_interface": "scsi",
+        "arch": "x86_64",
+        "console_type": "telnet",
+        "boot_priority": "cd",
+        "kvm": "allow"
+    },
+    "images": [
+        {
+            "filename": "VyOSActuallyExported.qcow2",
+            "version": "1.0",
+			"md5sum": "8bf7107d6317f08a3c09b6a888c0211f",
+            "filesize": 530513920,
+            "download_url": "ftp://10.50.200.130/FTP/VyOSActuallyExported.qcow2"
+        }
+    ],
+    "versions": [
+        {
+            "name": "1.4",
+            "images": {
+                "hda_disk_image": "VyOSActuallyExported.qcow2"
+            }
+        }
+    ]
+}
