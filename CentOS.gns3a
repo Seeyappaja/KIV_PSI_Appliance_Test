@@ -1,0 +1,50 @@
+{
+    "appliance_id": "597a01de-4b06-4f57-bd95-8c2e53f7dad6",
+    "name": "CentOS",
+    "category": "guest",
+    "description": "",
+    "vendor_name": "CentOS Project",
+    "vendor_url": "https://www.centos.org/",
+    "product_name": "CentOS",
+    "product_url": "https://www.centos.org/download/",
+    "registry_version": 4,
+    "status": "stable",
+    "availability": "free",
+    "maintainer": "Tomas Drly",
+    "maintainer_email": "tomasdrly@gmail.com",
+    "usage": "Default/Default credentials",
+    "qemu": {
+        "adapter_type": "e1000",
+        "adapters": 1,
+        "ram": 1024,
+        "hda_disk_interface": "sata",
+        "arch": "x86_64",
+        "console_type": "vnc",
+        "kvm": "disable"
+    },
+    "images": [
+        {
+            "filename": "CentOS-7-x86_64-Minimal-2009.iso",
+            "version": "7-2009 minimal",
+            "md5sum": "a4711c4fa6a1fb32bd555fae8d885b12",
+            "filesize": 1020264448,
+            "download_url": "http://ftp.cvut.cz/centos/7.9.2009/isos/x86_64/"
+        },
+        {
+            "filename": "empty8G.qcow2",
+            "version": "1",
+            "md5sum": "f1d2c25b6990f99bd05b433ab603bdb4",
+            "filesize": 197120,
+            "download_url": "https://sourceforge.net/projects/gns-3/files/Empty%20Qemu%20disk/empty8G.qcow2/download"
+        }
+    ],
+    "versions": [
+        {
+            "name": "LATEST",
+            "images": {
+                "hda_disk_image": "empty8G.qcow2",
+                "cdrom_image": "CentOS-7-x86_64-Minimal-2009.iso"
+            }
+        }
+    ]
+}
